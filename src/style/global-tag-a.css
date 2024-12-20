@@ -1,0 +1,13 @@
+.global-tag-a {
+    display: block;
+    margin-top: 15px; 
+    font-size: 1rem; 
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.global-tag-a:hover{
+    color: #0056b3;
+    text-decoration: underline; 
+}

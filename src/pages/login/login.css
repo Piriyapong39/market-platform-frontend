@@ -1,0 +1,14 @@
+body{
+    background-color: #dedada;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.global-form > div:first-child > h1 {
+    text-align: center;
+}
