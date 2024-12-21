@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+
+    <!-- global css -->
+     <link rel="stylesheet" href="../../style/global-body.css">
+     <link rel="stylesheet" href="../../style/global-header.css">
+     <link rel="stylesheet" href="../../style/global-logout-btn.css">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./homepage.css">
 </head>
 <body>
-    <h1>Hi this is homepage</h1>
+    <header class="global-header">
+        <div>
+            <ul>
+                <li><a href="./homepage.html">Market Platform</a></li>
+                <li><a href="../seller/authen/authen.html">Seller</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact</a></li>
+                <li type="click"><button class="global-btn-logout">Logout</button></li>
+            </ul>
+        </div>
+    </header>
     <script src="./homepage.js"></script>
 </body>
 </html>
