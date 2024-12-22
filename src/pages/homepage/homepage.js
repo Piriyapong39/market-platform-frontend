@@ -22,9 +22,3 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log(error)
     }    
 })
-
-document.querySelector(".global-btn-logout").addEventListener("click", ()=> {
-    localStorage.removeItem("token")
-    window.location.reload()
-})
-

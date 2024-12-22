@@ -1,25 +1,42 @@
-.global-btn-logout {
-    background-color: #d54b41;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.6s ease;
-  }
-  
-  .global-btn-logout:hover {
-    background-color: #d31212;
-  }
-  
-  .global-btn-logout:active {
-    background-color: #b24242;
-  }
-  
-  .global-btn-logout:disabled {
-    background-color: #e0e0e0;
-    color: #9e9e9e;
-    cursor: not-allowed;
-  }
-  
+.global-logout-btn {
+  background-color: #e74c3c;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.global-logout-btn:hover {
+  background-color: #c0392b;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.global-logout-btn:active {
+  background-color: #a93226;
+  transform: translateY(2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.global-logout-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(237, 39, 17, 0.4);
+}
+
+.global-logout-btn:disabled {
+  background-color: #f1f1f1;
+  color: #bdbdbd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
