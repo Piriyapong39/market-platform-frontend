@@ -4,8 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Homepage</title>
+
+    <!-- global css -->
+    <link rel="stylesheet" href="../../../style/global-body.css">
+    <link rel="stylesheet" href="../../../style/global-header.css">
+    <link rel="stylesheet" href="../../../style/global-logout-btn.css">
+    <link rel="stylesheet" href="../../../style/global-navbar.css">
+    <link rel="stylesheet" href="../../../style/global-chart.css">
+
+    <!-- local css -->
+     <link rel="stylesheet" href="./home.css">
+
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 </head>
 <body>
-    <h1>This is seller homepage</h1> 
+    <header class="global-header">
+        <div>
+            <ul>
+                <li><a href="#">Seller Homepage</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Purchase Order</a></li>
+                <li><a href="#">Shipped</a></li>
+                <li><a href="#">Contact</a></li>
+                <li type="click"><button class="global-logout-btn">Logout</button></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="global-left-navbar">
+            <ul>
+                <li>
+                    <a href="#">Dashboard</a>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Statistics</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <ul>
+                        <li><a href="#">List all Products</a></li>
+                        <li><a href="#">Add New</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+
+            <!-- greet seller -->
+            <h1></h1>
+
+            <!-- dashboard summary -->
+            <div class="dashboard-summary">
+                <div class="summary-card">
+                    <h3>Total income</h3>
+                    <p class="summary-value">฿15,750</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Progress order</h3>
+                    <p class="summary-value">23</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Low stock</h3>
+                    <p class="summary-value">5</p>
+                </div>
+            </div>
+
+            <!-- chart -->
+            <div class="global-chart">
+                <h2>Total month income</h2>
+                <canvas id="salesChart"></canvas>
+            </div>
+
+            <!-- dashboard lower section -->
+            <div class="dashboard-lower-section">
+                <div class="top-products">
+                    <h2>Best seller</h2>
+                    <ul>
+                        <li>
+                            <span class="product-name">Product A</span>
+                            <span class="product-sales">150 pieces</span>
+                        </li>
+                        <li>
+                            <span class="product-name">Product B</span>
+                            <span class="product-sales">120 pieces</span>
+                        </li>
+                        <li>
+                            <span class="product-name">Product C</span>
+                            <span class="product-sales">90 pieces</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recent-notifications">
+                    <h2>Notification</h2>
+                    <ul>
+                        <li>Order 1</li>
+                        <li>Product x is less than 5 pieces</li>
+                        <li>5 message from buyer</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- global script -->
+    <script src="../../../utils/global-logout.js"></script>
+    <!-- local script -->
+    <script src="./home.js"></script>
 </body>
 </html>

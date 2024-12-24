@@ -13,7 +13,15 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         })
         const result = await resonse.json();
-        console.log(result)
+        if (!resonse.ok) {
+            if (result.is_seller === false) {
+                null
+            } else {
+                window.location.href = "../../homepage/homepage.html"
+            }
+        } else {
+            window.location.href = "../seller-hompage/home.html"
+        }
     } catch (error) {
         console.log(error)
     }
@@ -34,9 +42,10 @@ acceptBtn.addEventListener("click", async () => {
         })
         const result = await resonse.json();
         if (!resonse.ok) {
-            console.log(result)
+            console.log(result.error)
         }else {
-            console.log(result)
+            localStorage.setItem("token", result.token)
+            window.location.reload()
         }
     } catch (error) {
         console.log(error)
