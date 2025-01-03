@@ -1,6 +1,4 @@
-.global-header > div:first-child > ul > li:last-child {
-    margin-left: auto;
-}
+
 
 .container{
     display: flex;
